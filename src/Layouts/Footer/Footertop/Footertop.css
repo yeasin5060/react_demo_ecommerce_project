@@ -1,0 +1,16 @@
+#footertop{
+    background: rgba(0, 0, 24, 0.692);
+}
+.footertop_contant{
+    text-align: center;
+    padding: 10px 0;
+}
+.span{
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    line-height: 19px;
+    font-size: 13px;
+    text-transform: capitalize;
+}

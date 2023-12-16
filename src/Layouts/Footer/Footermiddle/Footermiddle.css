@@ -1,0 +1,10 @@
+#footermiddel{
+    background: rgba(1, 1, 19, 0.938);
+    padding: 30px 0 70px 0;
+}
+.footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,10 @@
+#navbar{
+    padding: 18px 0;
+    background: rgba(8, 82, 27, 0.815);
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    column-gap: 50px;
+}
