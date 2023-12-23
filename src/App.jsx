@@ -16,6 +16,7 @@ import Sing from './Layouts/Header/Sing/Sing';
 import Order from './Layouts/Header/Order/Order';
 import Cart from './Layouts/Header/Cart/cart';
 import All from './Pages/All/All';
+import Login from './Layouts/Header/Login/Login';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path='/sgin' element={<Sing/>}/>
         <Route path='/order' element={<Order/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/login' element={<Login/>}/>
       </Route>
     )
   );

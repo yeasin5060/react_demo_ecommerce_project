@@ -1,0 +1,17 @@
+#baner{
+    background-image:url("images/ecommerce_baner.jpg");
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.layout{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.021),rgb(225, 225, 225));
+    position: absolute;
+    left: 0;
+    top: 0;
+}

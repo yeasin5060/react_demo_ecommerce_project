@@ -1,0 +1,11 @@
+.movies{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    overflow-x: scroll;
+    cursor: pointer;
+}
+.movies_tv_wrapper{
+    background: rgba(240, 248, 255, 0.87);
+    padding: 10px 0 10px 20px;
+}

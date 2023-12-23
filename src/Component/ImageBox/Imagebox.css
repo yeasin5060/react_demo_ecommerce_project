@@ -1,0 +1,22 @@
+#image_box{
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+}
+.image_box_images{
+    margin-top: 15px;
+}
+.image{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.image_link{
+    margin-top: 10px;
+}

@@ -50,6 +50,9 @@ const Header = () => {
                         <li>
                             <NavLink to='cart'>cart</NavLink>
                         </li>
+                        <li>
+                            <NavLink to='login'>login</NavLink>
+                        </li>
                     </ul>
                 </div>
             </div>

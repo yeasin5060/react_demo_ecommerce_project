@@ -1,0 +1,22 @@
+#bodyproduct{
+    position: relative;
+    left: 0;
+    top: -260px;
+}
+.body_product{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.bodyproduct_wrapper{
+    background: aliceblue;
+    padding: 15px 0 15px 10px;
+}
+.images_wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
+    overflow-x: scroll;
+    margin: 0 0 0 10px;
+}

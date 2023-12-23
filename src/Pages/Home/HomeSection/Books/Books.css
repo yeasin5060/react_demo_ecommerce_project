@@ -1,0 +1,22 @@
+#books{
+    position: relative;
+    left: 0;
+    top: -320px;
+}
+.bookss{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.books_wrapper{
+    background: rgba(240, 248, 255, 0.87);
+    padding: 10px 0 10px 20px;
+}
+.books_image_wraaper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    overflow-x: scroll;
+    cursor: pointer;
+}

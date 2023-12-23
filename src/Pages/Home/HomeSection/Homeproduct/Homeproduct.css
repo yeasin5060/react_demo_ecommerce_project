@@ -1,0 +1,28 @@
+
+.home_product_wrapper{
+    position: relative;
+    left: 0;
+    top: -393px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: transparent;
+    gap: 25px;
+}
+.home_head{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.shop{
+    font-size: 14px;
+    font-weight: 400;
+    color: blueviolet;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+.shop:hover{
+    color: rgb(3, 107, 107);
+}

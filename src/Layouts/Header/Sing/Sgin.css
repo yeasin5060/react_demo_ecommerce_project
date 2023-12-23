@@ -20,7 +20,7 @@
     border-radius: 10px;
 }
 .sgin_head{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 28px;
     line-height: 1.2;
     margin-bottom: 10px;
@@ -32,7 +32,7 @@
     padding-bottom: 2px;
     font-weight: 700;
 }
-.email{
+.emails{
     margin: 15px 0;
     border:1px solid rgb(0, 119, 128);
     padding: 10px 5px;
@@ -45,19 +45,98 @@
     font-size: 14px;
     font-weight: 400;
 }
-.continue{
+.continues{
     width: 100%;
     padding: 8px 0;
     color: #fff;
+    cursor: pointer;
     text-align: center;
     background: rgba(137, 43, 226, 0.788);
     border: none;
     border-radius: 10px;
     margin-bottom: 30px;
+    transition: all linear 0.3s;
+}
+.continues:hover{
+    background: rgb(81, 0, 128);
 }
 .form_pera{
     font-size: 12px;
     font-weight: 500;
     color: #111;
     text-transform: capitalize;
+}
+.work{
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    color: #111;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+.work::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: hsla(0, 0%, 15%, 0.13);
+    left: 0;
+    top: -15px;
+}
+.shopon{
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color:rgb(0, 217, 255);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.shopon:hover{
+    color: rgba(78, 8, 145, 0.788);
+    text-decoration: underline;
+}
+.bajarnew{
+    margin: 30px 0;
+    text-align: center;
+}
+.new{
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    color: #111;
+    text-transform: capitalize;
+}
+.new::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background: hsla(0, 0%, 15%, 0.13);
+    left: 445px;
+    top: 7px;
+}
+.new::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background: hsla(0, 0%, 15%, 0.13);
+    right: 445px;
+    top: 7px;
+}
+.create_btn{
+    text-align: center;
+}
+.create{
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 130px;
+    color: #111;
+    background: #fff;
+    border: 1px solid hsla(0, 0%, 15%, 0.13);
+    border-radius: 8px;
+}
+.create:hover{
+    background: rgba(255, 255, 255, 0.329);
+    border: 1px solid rgba(116, 19, 206, 0.822);
 }

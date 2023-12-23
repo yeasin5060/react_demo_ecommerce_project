@@ -1,0 +1,8 @@
+#todaybaner{
+    background-image:url("images/todaydealsbanar.jpg");
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

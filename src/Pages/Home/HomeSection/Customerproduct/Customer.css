@@ -1,0 +1,118 @@
+#customer{
+    position: relative;
+    background: #fff;
+    left: 0;
+    top:-150px;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.247);
+    padding-bottom: 30px;
+}
+.customer_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #fff;
+    gap:30px;
+    position: relative;
+}
+.customer_wrapper::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:  1px;
+    background: rgba(0, 0, 0, 0.342);
+    left: 0 ;
+    bottom: -50px;
+}
+.customer_product_box{
+    width: 270px;
+    padding: 15px;
+    cursor: pointer;
+    background: #fff;
+}
+.customer_product_image{
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+}
+.customer_product_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.customer_product_names{
+    margin-top: 20px;
+}
+.product_names{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(6, 71, 20);
+    cursor: pointer;
+    line-height: 140%;
+    transition: all linear 0.3s;
+}
+.product_names:hover{
+    color: rgb(255, 123, 71);
+}
+.product_review{
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.815);
+    margin-top: 10px;
+}
+.prices{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.726);
+}
+.old_prices{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.767);
+    font-weight: 400;
+    margin-top: 8px;
+}
+.sgin_in_box{
+    margin: 100px 0 0 0;
+    text-align: center;
+}
+.sgin_in_pera{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.904);
+    text-transform: capitalize;
+    line-height: 140%;
+    margin-bottom: 9px;
+}
+.sgin_in_btn{
+    padding: 6px 110px;
+    cursor: pointer;
+    background: rgba(255, 217, 0, 0.664);
+    border-radius:8px;
+    border: 1px solid rgb(255, 153, 0);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+    transition: all linear 0.3s;
+}
+.sgin_in_btn:hover{
+    background: rgb(255, 238, 0);
+}
+.new_customer{
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+    margin-top: 8px;
+}
+.start_here{
+    font-size: 12px;
+    font-weight: 400;
+    color:rgb(11, 128, 0);
+    text-transform: capitalize;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+.start_here:hover{
+    color: rgb(255, 154, 71);
+}
