@@ -1,7 +1,7 @@
 import React from 'react'
-import Img from '../image/img'
 import './Imagebox.css'
 import { Link, NavLink } from 'react-router-dom'
+import Img from '../Image/Img'
 
 const Imagebox = ( {head , style, link ,img , shop}) => {
   return (
@@ -11,7 +11,7 @@ const Imagebox = ( {head , style, link ,img , shop}) => {
         </div>
         <div className='image_box_images'>
            <div className='image'>
-                <Img source={img} alt="not found" />
+              <Img source={img} alt="not found" />
            </div>
            <div className='image_link'>
                 <Link className={shop} to ="shopnew">{link}</Link>

@@ -1,9 +1,9 @@
 import React from 'react'
 import Minihead from '../../../../Component/Miniheading/Minihead'
-import Img from '../../../../Component/image/img'
 import './Bodyproduct.css'
 import cetaphil from '../../../../images/cetaphil.jpg'
 import { Link } from 'react-router-dom'
+import Img from '../../../../Component/Image/Img'
 
 let arr = [
     {

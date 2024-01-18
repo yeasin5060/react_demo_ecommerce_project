@@ -15,7 +15,7 @@ const Login = () => {
         password: "",
         conPassword: ""
     })
-    let [ erres , setErres] = useState({})
+
     let hendleForm = (e) =>{
         let { name , value} = e.target;
         setUserData({...userData,[name]:value})
@@ -26,48 +26,61 @@ const Login = () => {
         })
         setErres(valition(userData))
     }
+    let [ erres , setErres] = useState({})
+
+                //validation
     function valition (userData){
         erres = {}
-        const email_pattern = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-        const password_pattern = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*_)(?!.* ).{8,16}$/;
+        let email_pattern = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
 
+        let password_pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/;
+        
+                //first name
         if(userData.fristName == ""){
             erres.fristName = "Frist name is Required!";
         } else{
             erres.mame = " ";
         }
+
+                    //last name
         if(userData.lastName == ""){
             erres.lastName = "Last name is Required!";
         } else{
             erres.lastName = " ";
         }
+
+                    //email
         if(userData.email == ""){
             erres.email = "Email is Repuired!"
         }
         else{
-            if(!email_pattern.match(userData.email)){
+            if(email_pattern.test(userData.email)){
                 erres.email = " ";
             }
             else{
                 erres.email = "Inter validate Email"
             }
         }
+
+                        //password
         if(userData.password == ""){
             erres.password = "Password is Repuired!"
         }
         else{
-            if(!password_pattern.test(userData.password)){
+            if(password_pattern.test(userData.password)){
                 erres.password = " ";
             }
             else{
-                erres.password = "Inter validate Password"
+                erres.password = "Inter Strong Password"
             }
         }
+
+                        //confirm password
         if(userData.conPassword == ""){
             erres.conPassword = "Confirm password is Repuired!"
         }
         else{
-            if(!userData.conPassword.match(userData.password)){
+            if(userData.conPassword == userData.password){
                 erres.conPassword = " ";
             }
             else{

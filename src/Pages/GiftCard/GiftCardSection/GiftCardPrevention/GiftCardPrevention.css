@@ -1,0 +1,20 @@
+#giftcardprevention{
+    margin:  50px 0;
+    background: #fff;
+}
+.giftcardprevention_wrapper{
+    width: 100%;
+    background:rgba(240, 248, 255, 0.863);
+    text-align: center;
+    padding: 40px 0;
+    cursor: pointer;
+}
+.giftcardprevention_link{
+    text-align: center;
+}
+.giftcardprevention_contant{
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.842);
+    font-weight: 600;
+    text-align: center;
+}

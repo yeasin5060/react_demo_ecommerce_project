@@ -1,0 +1,67 @@
+#giftcardtrending{
+    padding: 60px 0;
+    background: #fff;
+}
+.giftcardtrending_head{
+    margin-bottom: 70px;
+}
+.giftcardtrending_heading{
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    line-height: 140%;
+    position: relative;
+}
+.giftcardtrending_heading::after{
+    content: "";
+    position: absolute;
+    width: 1280px;
+    height: 1px ;
+    background: #0000004b;
+    left: 0;
+    bottom: -15px;
+}
+.giftcardtrending_trending_product_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.giftcardtrending_trending_product_box{
+    width: 270px;
+    background: #fff;
+    border-radius:10px;
+}
+.giftcardtrending_trending_product_image_box{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.giftcardtrending_trending_product_image_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.giftcardtrending_trending_product_ditail_box{
+    margin: 20px 0;
+}
+.giftcardtrending_trending_product_ditail_link{
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #000;
+    transition: all linear 0.3s;
+}
+.giftcardtrending_trending_product_ditail_link:hover{
+    color: rgb(172, 78, 12);
+}
+.giftcardtrending_trending_product_company_name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin: 8px 0;
+}
+.giftcardtrending_trending_product_price{
+    font-size: 20px;
+    font-weight: 600;
+}

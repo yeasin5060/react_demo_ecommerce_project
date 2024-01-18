@@ -1,0 +1,11 @@
+#registrybanartwo{
+    margin: 10px 0 70px 0;
+}
+.registrybananrtwo_banar{
+    background-image:url("images/registrybanertwo.jpg");
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

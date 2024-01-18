@@ -1,0 +1,40 @@
+#giftcardbalance{
+    margin: 0 0 60px 0;
+    background: #fff;
+}
+.giftcardbalance_wrapper{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    flex-wrap: wrap;
+}
+.giftcardbalance_box{
+    width: 400px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+}
+.giftcardbalance_box_img{
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
+.giftcardbalance_box_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.giftcardbalance_box_link_head{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.842);
+    font-weight: 600;
+    margin-top: 30px;
+}

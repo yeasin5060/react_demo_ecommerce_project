@@ -1,0 +1,36 @@
+#giftcard_question{
+    margin: 70px 0;
+    background: #fff;
+}
+.giftcard_question_wrapper{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 100%;
+}
+.giftcard_question_contant_head{
+    margin-bottom: 30px;
+}
+.question_contant_head{
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.842);
+    font-weight: 600;
+}
+.giftcard_question_small_contant_wrapper{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+}
+.giftcard_question_small_contant_head{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.842);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.giftcard_question_small_contant_pera{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.842);
+    font-weight: 400;
+}

@@ -1,8 +1,9 @@
 import React from 'react'
+import Sing from '../Sing/Sing'
 
 const Order = () => {
   return (
-    <div>Order</div>
+   <Sing/>
   )
 }
 
