@@ -1,0 +1,77 @@
+#sell_video{
+    margin: 80px 0;
+    background: #fff;
+}
+.sell_video_wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.sell_video_box{
+    width: 720px;
+    height: 500px;
+    border-radius: 10px;
+}
+.sell_video_youtube{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.sell_video_contant{
+    margin: 0 10px;
+}
+.sell_video_contant_box{
+    width: 720px;
+    height: 500px;
+    border-radius: 10px;
+    background:#161e2d;;
+    padding: 30px;
+}
+.sell_video_contant_box_head{
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+.sell_video_contant_box_head::after{
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 6px;
+    background: rgb(5, 91, 161);
+    left: 0;
+    bottom: -25px;
+}
+.sell_video_contant_box_head_pera{
+    font-size: 22px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+   margin-top: 40px;
+}
+.sell_video_reting_wrapper{
+    padding: 20px;
+    background: #232f3e;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+.sell_video_reting_flex{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.sell_video_reting_head{
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sell_video_reting_pera{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    width: 200px;
+}

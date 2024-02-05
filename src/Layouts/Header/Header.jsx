@@ -42,7 +42,7 @@ const Header = () => {
                             <NavLink className='en' to='en'>en</NavLink>
                         </li>
                         <li>
-                            <NavLink to='sgin'>sgin in</NavLink>
+                            <NavLink to='sgin'>sign in</NavLink>
                         </li>
                         <li>
                             <NavLink to='order'>order</NavLink>

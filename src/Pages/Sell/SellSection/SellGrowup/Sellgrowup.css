@@ -1,0 +1,149 @@
+#sell_growup{
+    background: #fff;
+    padding: 20px 0;
+}
+.sell_growup_box_wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.sell_growup_contant_box{
+    width: 60%;
+}
+.sell_growup_seller_btn{
+    width: 350px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background: rgb(22, 190, 176);
+    cursor: pointer;
+    text-align: center;
+}
+.sell_growup_seller_btn a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+}
+.star_left{
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fff;
+}
+.star_right{
+    font-size: 18px;
+    margin-left: 10px;
+    color: #fff;
+}
+.sell_growup_contant_wrapper{
+   margin: 30px 0;
+}
+.sell_growup_contant_heading{
+    font-size: 44px;
+    color: #0F1111;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 140%;
+}
+.sell_growup_contant_pera{
+    font-size: 16px;
+    color: #0F1111;
+    text-transform: capitalize;
+    line-height: 140%;
+    font-weight: 400;
+}
+.sell_growup_check_{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.sell_growup_contant_check_box{
+    display: flex;
+    justify-content: left;
+    column-gap: 10px;
+    align-items: center;
+}
+.sell_growup_check_icon{
+    font-size: 18px;
+    color: #0c6f7c;
+}
+.sell_growup_check_contant_pera{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.sell_growup_image_box{
+    width: 40%;
+    height: 500px;
+}
+.sell_growup_image_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sell_growup_contant_check_btn{
+    margin-top: 40px;
+    cursor: pointer;
+}
+.sell_growup_contant_check_btn a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.sell_growup_contant_check_arrow{
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+}
+.sell_growup_your_brand_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+    margin: 100px 0 50px 0;
+}
+.sell_growup_your_brand_box{
+    cursor: pointer;
+}
+.sell_growup_your_brand_box a {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+}
+.sell_growup_your_brand_link_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.sell_growup_your_brand_link{
+    padding: 10px 10px;
+    background: #eaeded;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+.sell_growup_your_brand_link:hover{
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
+.sell_growup_your_brand_link:nth-child(2){
+    background:#96c7c7;
+}
+.sell_growup_your_brand_link:nth-child(3){
+    background:#c2c796;
+}
+.sell_growup_your_brand_link:nth-child(4){
+    background:#86a5a5;
+}
+.sell_growup_your_brand_link a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;;
+    cursor: pointer;
+}
