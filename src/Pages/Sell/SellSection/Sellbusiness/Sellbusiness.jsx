@@ -6,8 +6,30 @@ import { Link } from 'react-router-dom'
 import Minihead from '../../../../Component/Miniheading/Minihead'
 import { IoPlayCircleSharp } from "react-icons/io5";
 import profileamazon from '../../../../images/profileamazon.jpg'
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import { IoMdClose } from "react-icons/io";
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 1000,
+    bgcolor: 'none',
+    border: '0',
+    boxShadow: 24,
+    p:0,
+  };
 
 const Sellbusiness = () => {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+    let closevideo = ()=>{
+         setOpen(false);
+    }
   return (
     <section id='sell_besiness'>
         <div className='container'>
@@ -21,7 +43,7 @@ const Sellbusiness = () => {
                                 <Link className='sell_business_conrant_link' to="explorepricing">Explore pricing</Link>
                             </div>
                             <div className='sell_business_conrant_button_box'>
-                                <button className='sell_business_conrant_button'><IoPlayCircleSharp className='sell_business_conrant_button_box_play' />watch video</button>
+                                <button onClick={handleOpen} className='sell_business_conrant_button'><IoPlayCircleSharp className='sell_business_conrant_button_box_play' />watch video</button>
                             </div>
                         </div>
                     </div>
@@ -43,6 +65,29 @@ const Sellbusiness = () => {
                 <iframe src="https://www.youtube.com/embed/NrmMk1Myrxc?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box sx={style}>
+                    <div className='sell_business_conrant_button_video_box'>
+                        <div className='sell_business_conrant_button_video_box_flex'>
+                            <div className='sell_business_conrant_button_video_flex_head_box'>
+                                <Minihead text="Why sell with Amazon?"
+                                    style="sell_business_conrant_button_video_amazon"/>
+                            </div>
+                            <div className='sell_business_conrant_button_close_video'>
+                                <button onClick={closevideo}><IoMdClose className='sell_business_conrant_button_close_icon' /></button>
+                            </div>
+                        </div>
+                        <div className='sell_business_conrant_button_video'>
+                            <iframe src="https://www.youtube.com/embed/c67K8JO1WJE?autoplay=1&mute=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </Box>
+            </Modal>
         </div>
     </section>
   )

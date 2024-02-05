@@ -165,3 +165,45 @@
     height: 100%;
     object-fit: cover;
 }
+.sell_business_conrant_button_video_box{
+    width: 1000px;
+    background: none;
+}
+.sell_business_conrant_button_video{
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    background: none;
+}
+.sell_business_conrant_button_video iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sell_business_conrant_button_video_amazon{
+    background: none;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+}
+.sell_business_conrant_button_video_box_flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:25px 0;
+}
+.sell_business_conrant_button_close_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sell_business_conrant_button_close_icon{
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
