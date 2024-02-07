@@ -1,9 +1,9 @@
 import React from 'react'
 import './Books.css'
 import Minihead from '../../../../Component/Miniheading/Minihead'
-import Img from '../../../../Component/image/img'
 import books from '../../../../images/books_one.jpg'
 import { Link } from 'react-router-dom'
+import Img from '../../../../Component/Image/Img'
 
 
 const Books = () => {
