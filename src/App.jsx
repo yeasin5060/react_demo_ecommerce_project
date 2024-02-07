@@ -14,9 +14,9 @@ import Giftcard from './Pages/GiftCard/Giftcard';
 import Sell from './Pages/Sell/Sell';
 import Sing from './Layouts/Header/Sing/Sing';
 import Order from './Layouts/Header/Order/Order';
-import Cart from './Layouts/Header/Cart/cart';
 import All from './Pages/All/All';
 import Login from './Layouts/Header/Login/Login';
+import Cart from './Layouts/Header/Cart/Cart';
 
 
 function App() {
