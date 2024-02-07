@@ -1,8 +1,8 @@
 import React from 'react'
 import './Movies.css'
-import Img from '../image/img'
 import movies from '../../images/movies_one.jpg'
 import { Link } from 'react-router-dom'
+import Img from '../Image/Img'
 
 const Movies = ({style,head}) => {
   return (
