@@ -1,8 +1,12 @@
 #registry_banar{
-    background-image:url("images/registrybanar.jpg");
     width: 100%;
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+#registry_banar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
