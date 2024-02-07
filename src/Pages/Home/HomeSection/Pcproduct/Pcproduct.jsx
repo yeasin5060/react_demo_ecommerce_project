@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Minihead from '../../../../Component/Miniheading/Minihead'
-import Img from '../../../../Component/image/img'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import './Pcproduct.css'
 import proplus from '../../../../images/proplus.jpg'
+import Img from '../../../../Component/Image/Img'
 
 let arr = [
     {
