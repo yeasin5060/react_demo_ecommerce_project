@@ -1,14 +1,35 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
 
+const style = {
+    position: 'absolute',
+    top:'0',
+    left: '0',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    height : 100,
+    bgcolor: '#fff',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 0,
+  };
 const Navbar = () => {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+    let openall =()=>{
+        handleOpen()
+    }
   return (
     <nav id='navbar'>
         <div className='container'>
             <ul className='item'>
                 <li>
-                    <NavLink to='all'>all</NavLink>
+                    <button className='alllinksitebar'  onClick={openall}>all</button>
                 </li>
                 <li>
                     <NavLink to='/'>home</NavLink>
@@ -30,6 +51,16 @@ const Navbar = () => {
                 </li>
             </ul>
         </div>
+        <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <h1>achi</h1>
+        </Box>
+      </Modal>
     </nav>
   )
 }

@@ -14,7 +14,6 @@ import Giftcard from './Pages/GiftCard/Giftcard';
 import Sell from './Pages/Sell/Sell';
 import Sing from './Layouts/Header/Sing/Sing';
 import Order from './Layouts/Header/Order/Order';
-import All from './Pages/All/All';
 import Login from './Layouts/Header/Login/Login';
 import Cart from './Layouts/Header/Cart/Cart';
 
@@ -24,7 +23,6 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<Main/>}>
-        <Route path='/all' element={<All/>}/>
         <Route path='/' element={<Home/>}/>
         <Route path='/todaydeals' element={<Todatdeals/>}/>
         <Route path='/registry' element={<Registry/>}/>

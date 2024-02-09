@@ -8,3 +8,12 @@
     justify-content: left;
     column-gap: 50px;
 }
+.alllinksitebar{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    background: transparent;
+    border: none;
+}
