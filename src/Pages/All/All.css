@@ -8,4 +8,5 @@
     height: 100vh;
     padding: 0 20px;
     overflow-y: scroll;
+    padding-bottom: 150px;
 }
