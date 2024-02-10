@@ -3,16 +3,17 @@ import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
+import All from '../../Pages/All/All';
+import { IoMdClose } from "react-icons/io";
 
 const style = {
     position: 'absolute',
     top:'0',
     left: '0',
-    transform: 'translate(-50%, -50%)',
     width: 400,
     height : 100,
     bgcolor: '#fff',
-    border: '2px solid #000',
+    border: '0',
     boxShadow: 24,
     p: 0,
   };
@@ -24,6 +25,9 @@ const Navbar = () => {
     let openall =()=>{
         handleOpen()
     }
+    let sitebarclose = ()=>{
+      handleClose()
+   }
   return (
     <nav id='navbar'>
         <div className='container'>
@@ -58,7 +62,10 @@ const Navbar = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <h1>achi</h1>
+          <All/>
+          <div className='all_sign_close_icon_box'>
+            <button className='all_sign_close_btn' onClick={sitebarclose}><IoMdClose className='all_sign_close_icon' /></button>
+          </div>
         </Box>
       </Modal>
     </nav>
