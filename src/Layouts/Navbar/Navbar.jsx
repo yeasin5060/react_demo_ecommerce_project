@@ -10,7 +10,7 @@ const style = {
     position: 'absolute',
     top:'0',
     left: '0',
-    width: 400,
+    width: 350,
     height : 100,
     bgcolor: '#fff',
     border: '0',
