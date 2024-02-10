@@ -1,0 +1,45 @@
+#allhelp{
+    width: 100%;
+}
+.allhelp_wrapper{
+    padding: 20px 0;
+}
+.allhelp_wrapper_head_box{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.allhelp_wrapper_head{
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+}
+.allhelp_wrapper_link_box{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+    position: relative;
+}
+.allhelp_wrapper_alllink_item_box{
+   text-align: left;
+   width: 100%;
+   padding: 10px 0;
+}
+.allhelp_wrapper_alllink_item_box:hover{
+    background: #e2dbdb;
+}
+.allhelp_alllinks{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0f0d0de3;
+    text-transform: capitalize;
+    padding: 10px 10px;
+    width: 100%;
+    transition: all linear 0.3s;
+}
+.allhelp_alllinks:hover{
+    color: #0f0d0de3;
+}

@@ -4,6 +4,7 @@ import Allsign from './Allsection/Allsign/Allsign'
 import Alldigital from './Allsection/Alldigital/Alldigital'
 import Allshop from './Allsection/Allshop/Allshop'
 import Allprogram from './Allsection/Allprogram/Allprogram'
+import Allhelp from './Allsection/Allhelp/Allhelp'
 const All = () => {
   return (
    <section id='all'>
@@ -12,6 +13,7 @@ const All = () => {
         <Alldigital/>
         <Allshop/>
         <Allprogram/>
+        <Allhelp/>
       </div>
    </section>
   )
