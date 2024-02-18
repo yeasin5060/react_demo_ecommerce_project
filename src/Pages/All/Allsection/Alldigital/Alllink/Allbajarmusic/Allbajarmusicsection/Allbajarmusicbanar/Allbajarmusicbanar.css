@@ -1,0 +1,52 @@
+#allbajarmusic_banar{
+    padding: 100px 0;
+    background: rgb(0, 255, 234);
+}
+.allbajarmusic_banar_wrapper{
+    text-align: center;
+}
+.allbajarmusic_banar_wrapper_nanohead{
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+.allbajarmusic_banar_wrapper_subhead{
+    font-size: 52px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+.allbajarmusic_banar_wrapper_minihead{
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+.allbajarmusic_banar_wrapper_link{
+    padding: 10px 20px;
+    background: yellow;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    transition: all linear 0.3s;
+    margin-bottom: 20px;
+}
+.allbajarmusic_banar_wrapper_link:hover{
+    background: rgba(255, 255, 0, 0.815);
+}
+.allbajarmusic_banar_wrapper_pera{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 150%;
+}
