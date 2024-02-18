@@ -1,6 +1,7 @@
 import React from 'react'
 import Allbajarmusicnavbar from './Allbajarmusicsection/Allbajarmusicnavbar/Allbajarmusicnavbar'
 import Allbajarmusicbanar from './Allbajarmusicsection/Allbajarmusicbanar/Allbajarmusicbanar'
+import Alldemandmusic from './Allbajarmusicsection/Alldemandmusic/Alldemandmusic'
 
 
 const Allbajarmusic = () => {
@@ -8,6 +9,7 @@ const Allbajarmusic = () => {
    <>
     <Allbajarmusicnavbar/>
     <Allbajarmusicbanar/>
+    <Alldemandmusic/>
    </>
   )
 }

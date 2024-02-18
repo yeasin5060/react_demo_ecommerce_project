@@ -16,7 +16,7 @@ import Sing from './Layouts/Header/Sing/Sing';
 import Order from './Layouts/Header/Order/Order';
 import Login from './Layouts/Header/Login/Login';
 import Cart from './Layouts/Header/Cart/Cart';
-import Allbajarmusicnavbar from './Pages/All/Allsection/Alldigital/Alllink/Allbajarmusic/Allbajarmusicsection/Allbajarmusicnavbar/Allbajarmusicnavbar';
+import Allbajarmusic from './Pages/All/Allsection/Alldigital/Alllink/Allbajarmusic/Allbajarmusic';
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
         <Route path='/order' element={<Order/>}/>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/bajarmusic' element={<Allbajarmusicnavbar/>}/>
+        <Route path='bajarmusic' element ={<Allbajarmusic/>}/>
       </Route>
     )
   );

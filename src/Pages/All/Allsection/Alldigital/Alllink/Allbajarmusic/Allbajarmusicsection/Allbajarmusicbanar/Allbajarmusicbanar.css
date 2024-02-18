@@ -1,6 +1,6 @@
 #allbajarmusic_banar{
     padding: 100px 0;
-    background: rgb(0, 255, 234);
+    background: rgb(0, 174, 255);
 }
 .allbajarmusic_banar_wrapper{
     text-align: center;
@@ -49,4 +49,5 @@
     color: #fff;
     text-transform: capitalize;
     line-height: 150%;
+    margin-top: 20px;
 }
