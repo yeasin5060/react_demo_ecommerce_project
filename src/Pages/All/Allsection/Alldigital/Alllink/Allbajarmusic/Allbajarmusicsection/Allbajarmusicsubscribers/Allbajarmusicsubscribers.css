@@ -1,0 +1,30 @@
+#allbajarmusic_subscribers{
+    padding: 60px 0;
+    background: rgb(0, 174, 255);
+}
+.allbajarmusic_subscribers_contant_wrapper{
+    text-align: center;
+}
+.allbajarmusic_subscribers_contant_link{
+    padding: 10px 20px;
+    background: yellow;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    transition: all linear 0.3s;
+    margin-bottom: 20px;
+}
+.allbajarmusic_subscribers_contant_link:hover{
+    background: rgba(255, 255, 0, 0.815);
+    color: #fff;
+}
+.allbajarmusic_subscribers_contant_pera{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 150%;
+    margin-top: 20px;
+}

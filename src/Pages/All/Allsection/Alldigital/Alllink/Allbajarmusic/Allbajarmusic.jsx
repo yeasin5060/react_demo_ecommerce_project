@@ -3,6 +3,7 @@ import Allbajarmusicnavbar from './Allbajarmusicsection/Allbajarmusicnavbar/Allb
 import Allbajarmusicbanar from './Allbajarmusicsection/Allbajarmusicbanar/Allbajarmusicbanar'
 import Alldemandmusic from './Allbajarmusicsection/Alldemandmusic/Alldemandmusic'
 import Allbajarmusicseemore from './Allbajarmusicsection/Allbajarmusicseemore/Allbajarmusicseemore'
+import Allbajarmusicsubscribers from './Allbajarmusicsection/Allbajarmusicsubscribers/Allbajarmusicsubscribers'
 
 
 const Allbajarmusic = () => {
@@ -12,6 +13,7 @@ const Allbajarmusic = () => {
     <Allbajarmusicbanar/>
     <Alldemandmusic/>
     <Allbajarmusicseemore/>
+    <Allbajarmusicsubscribers/>
    </>
   )
 }
