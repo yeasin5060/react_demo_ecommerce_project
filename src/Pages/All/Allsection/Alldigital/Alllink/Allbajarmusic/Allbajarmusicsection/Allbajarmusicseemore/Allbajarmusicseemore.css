@@ -1,0 +1,36 @@
+#allbajatmusic_seemore{
+    padding: 70px;
+    background: #000;
+    text-align: center;
+}
+.allbajatmusic_seemore_wrapper_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.allbajatmusic_seemore_wrapper_flex::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #796d6d63;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.allbajatmusic_seemore_wrapper_contant_nanohead{
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.allbajatmusic_seemore_wrapper_link{
+    font-size: 42px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
