@@ -1,0 +1,26 @@
+#allelectronic_navbar{
+    padding: 30px;
+    background: #fff;
+}
+.allelectronic_navbar_contant_wrapper_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.allelectronic_navbar_contant_pera{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 140%;
+}
+.allelectronic_navbar_contant_link{
+    padding: 8px 16px;
+    border:  1px solid #000;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    line-height: 140%;
+    cursor: pointer;
+}
