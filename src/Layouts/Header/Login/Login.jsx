@@ -3,13 +3,15 @@ import './Login.css'
 import Subhead from '../../../Component/Subheading/Subhead'
 import { getDatabase, ref, set,push } from "firebase/database";
 import { Link } from 'react-router-dom';
+import { getAuth, createUserWithEmailAndPassword , sendEmailVerification ,updateProfile } from "firebase/auth";
 
 
 const Login = () => {
 
+    const auth = getAuth();
     const db = getDatabase();
     let [ userData , setUserData] = useState({
-        fristName: "",
+        firstName: "",
         lastName: "",
         email: "",
         password: "",
@@ -21,10 +23,33 @@ const Login = () => {
         setUserData({...userData,[name]:value})
     }
     let logIn = () =>{
-        set(push(ref(db,"fromdata")),{
-            formData : userData,
-        })
         setErres(valition(userData))
+        createUserWithEmailAndPassword(auth, userData.email, userData.password)
+            .then((userCredential) => {
+                sendEmailVerification(auth.currentUser)
+                    console.log(userCredential)
+                .then(() => {
+                    updateProfile(auth.currentUser, {
+                        displayName: userData.firstName,
+                        photoURL: "https://example.com/jane-q-user/profile.jpg"
+                      }).then(() => {
+                        set(ref(db ,"customerdata/" + userCredential.user.uid),{
+                          customerName : userCredential.user.displayName,
+                          customerEmail : userCredential.user.email,
+                          customerPhoto : userCredential.user.photoURL
+                        })
+                    })
+                });
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                if(errorCode == "auth/invalid-credential"){
+                    setErres({email:"Signin your email"});
+                  }else{
+                    erres.email = " ";
+                  }
+                // ..
+            });
     }
     let [ erres , setErres] = useState({})
 
@@ -37,7 +62,7 @@ const Login = () => {
         
                 //first name
         if(userData.fristName == ""){
-            erres.fristName = "Frist name is Required!";
+            erres.firstName = "Frist name is Required!";
         } else{
             erres.mame = " ";
         }
@@ -101,7 +126,7 @@ const Login = () => {
                     <Subhead text="login" style="login"/>
                 </div>
                 <div className='input_boxs'>
-                    <input className='inputs' name="fristName" type='text' placeholder='enter your firstname' onChange={hendleForm}/>
+                    <input className='inputs' name="firstName" type='text' placeholder='enter your firstname' onChange={hendleForm}/>
                    { erres.fristName && <p className='from_err'>{erres.fristName}</p>}    
                 </div>
                 <div className='input_boxs'>

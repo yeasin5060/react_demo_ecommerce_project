@@ -19,7 +19,6 @@ import Cart from './Layouts/Header/Cart/Cart';
 import Allbajarmusic from './Pages/All/Allsection/Alldigital/Alllink/Allbajarmusic/Allbajarmusic';
 import Allelectronic from './Pages/All/Allsection/Allshop/Allelectronics/Allelectronic';
 
-
 function App() {
  
   const router = createBrowserRouter(
