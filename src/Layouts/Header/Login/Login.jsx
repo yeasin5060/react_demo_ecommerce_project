@@ -4,12 +4,14 @@ import Subhead from '../../../Component/Subheading/Subhead'
 import { getDatabase, ref, set,push } from "firebase/database";
 import { Link } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword , sendEmailVerification ,updateProfile } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
 
     const auth = getAuth();
     const db = getDatabase();
+    const navigate = useNavigate();
     let [ userData , setUserData] = useState({
         firstName: "",
         lastName: "",
@@ -27,7 +29,6 @@ const Login = () => {
         createUserWithEmailAndPassword(auth, userData.email, userData.password)
             .then((userCredential) => {
                 sendEmailVerification(auth.currentUser)
-                    console.log(userCredential)
                 .then(() => {
                     updateProfile(auth.currentUser, {
                         displayName: userData.firstName,
@@ -37,19 +38,29 @@ const Login = () => {
                           customerName : userCredential.user.displayName,
                           customerEmail : userCredential.user.email,
                           customerPhoto : userCredential.user.photoURL
+                        }).then(()=>{
+                            navigate("/sgin")
+                            console.log(userCredential)
                         })
                     })
                 });
-            })
-            .catch((error) => {
+            }).catch((error) => {
                 const errorCode = error.code;
-                if(errorCode == "auth/invalid-credential"){
-                    setErres({email:"Signin your email"});
+                if(errorCode == "auth/email-already-in-use"){
+                    erres.email = "Email already exised";
+                    console.log(errorCode)
                   }else{
                     erres.email = " ";
                   }
                 // ..
             });
+        setUserData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            password: "",
+            conPassword: ""
+        })
     }
     let [ erres , setErres] = useState({})
 
@@ -126,23 +137,23 @@ const Login = () => {
                     <Subhead text="login" style="login"/>
                 </div>
                 <div className='input_boxs'>
-                    <input className='inputs' name="firstName" type='text' placeholder='enter your firstname' onChange={hendleForm}/>
+                    <input className='inputs' value={setUserData.firstName} name="firstName" type='text' placeholder='enter your firstname' onChange={hendleForm}/>
                    { erres.fristName && <p className='from_err'>{erres.fristName}</p>}    
                 </div>
                 <div className='input_boxs'>
-                    <input className='inputs' name="lastName" type='text' placeholder='enter your lastname' onChange={hendleForm}/>
+                    <input className='inputs' value={setUserData.lastName} name="lastName" type='text' placeholder='enter your lastname' onChange={hendleForm}/>
                     { erres.lastName && <p className='from_err'>{erres.lastName}</p>}
                 </div>
                 <div className='input_boxs'>
-                    <input className='inputs' name="email" type='email' placeholder='email' onChange={hendleForm}/>
+                    <input className='inputs' value={setUserData.email} name="email" type='email' placeholder='email' onChange={hendleForm}/>
                      { erres.email && <p className='from_err'>{erres.email}</p>}
                 </div>
                 <div className='input_boxs'>
-                    <input className='inputs' name="password" type='current-password' placeholder='password' onChange={hendleForm}/>
+                    <input className='inputs' value={setUserData.password} name="password" type='current-password' placeholder='password' onChange={hendleForm}/>
                     { erres.password && <p className='from_err'>{erres.password}</p>}
                 </div>
                 <div className='input_boxs'>
-                    <input className='inputs' name="conPassword" type='new-password' placeholder='confirm password' onChange={hendleForm}/>
+                    <input className='inputs' value={setUserData.conPassword} name="conPassword" type='new-password' placeholder='confirm password' onChange={hendleForm}/>
                     { erres.conPassword && <p className='from_err'>{erres.conPassword}</p>}
                 </div>
                 <div className='form_btn'>
