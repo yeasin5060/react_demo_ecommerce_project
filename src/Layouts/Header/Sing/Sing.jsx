@@ -3,11 +3,16 @@ import './Sgin.css'
 import Subhead from '../../../Component/Subheading/Subhead'
 import Pera from '../../../Component/Pera/Pera'
 import { Link } from 'react-router-dom'
-import { getDatabase, ref, set,push } from "firebase/database";
+import { getAuth, signInWithEmailAndPassword , signOut } from "firebase/auth";
+import { useSelector, useDispatch } from 'react-redux'
+import { customers } from '../../../userslice'
+import { useNavigate } from "react-router-dom";
 
 const Sing = () => {
 
-  const db = getDatabase();
+  const auth = getAuth();
+  const dispatch = useDispatch()
+  const navigate = useNavigate();
   let [sginData , setSginData] = useState({
     email:"",
     password : ""
@@ -18,6 +23,29 @@ const Sing = () => {
   }
   let heandleContinues = () => {
     setSginerr(sginvalidation(sginData))
+      signInWithEmailAndPassword(auth, sginData.email, sginData.password)
+        .then((userCredential) => {
+          if(userCredential.user.emailVerified){
+            localStorage.setItem("cutomerdata" , JSON.stringify(userCredential.user))
+            dispatch(customers(userCredential.user))
+            console.log(userCredential)
+            navigate("/")
+          }else{
+            signOut(auth).then(() => {
+              setSginerr({email:"Verify your email"});
+            });
+          }
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        if(errorCode == "auth/invalid-credential"){
+          setSginerr({email:"Login your email"});
+        }else{
+          sginerr.email = " ";
+        }
+      });
+  
+
   }
   let Create = () =>{
     console.log("the number one button is a bokchod ")
