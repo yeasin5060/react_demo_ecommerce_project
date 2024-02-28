@@ -32,18 +32,33 @@
     padding-bottom: 2px;
     font-weight: 700;
 }
-.emails{
-    margin: 15px 0;
+.sgin_input_email_box{
+    margin: 0 0 8px 0;
+}
+.sgin_input_password_box{
+    margin: 0 0 8px 0;
+}
+.sgin_emails{
+    margin: 0;
     border:1px solid rgb(0, 119, 128);
     padding: 10px 5px;
     border-radius: 5px;
     outline: none;
     width: 100%;
 }
-.email_err{
+.sgin_password{
+    margin:0;
+    border:1px solid rgb(0, 119, 128);
+    padding: 10px 5px;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+.sgin_err{
     color: red;
     font-size: 14px;
     font-weight: 400;
+    margin-top: 4px;
 }
 .continues{
     width: 100%;

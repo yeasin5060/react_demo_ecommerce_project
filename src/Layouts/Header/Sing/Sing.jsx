@@ -8,22 +8,50 @@ import { getDatabase, ref, set,push } from "firebase/database";
 const Sing = () => {
 
   const db = getDatabase();
-  let [emailData , setEmailData] = useState({
+  let [sginData , setSginData] = useState({
     email:"",
+    password : ""
   })
   let handleEmail = (e)=>{
       let{name , value} = e.target
-      setEmailData({...emailData,[name]:value})
+      setSginData({...sginData,[name]:value})
   }
-  let Email = document.querySelector(".emails")
   let heandleContinues = () => {
-    set(push(ref(db,"fromdata")),{
-      fromData : emailData,
-    })
-    Email.value = " ";
+    setSginerr(sginvalidation(sginData))
   }
   let Create = () =>{
     console.log("the number one button is a bokchod ")
+  }
+
+  let [ sginerr , setSginerr] = useState({})
+
+  function sginvalidation (sginData){
+
+    sginerr = {}
+
+      //email regex
+    let email_pattern = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
+
+            //email validation
+    if(sginData.email == "" ){
+      sginerr.email = "Email is Repuired!";
+    }else{
+      if(email_pattern.test(sginData.email)){
+        sginerr.email = "";
+      }
+      else{
+        sginerr.email = "Inter validate Email";
+      }
+    }
+
+        //password validation
+    if(sginData.password == ""){
+      sginerr.password = "Password is Required!";
+    }
+    else{
+      sginerr.password = "";
+    }
+    return sginerr;
   }
 
   return (
@@ -36,10 +64,15 @@ const Sing = () => {
           <Subhead text="Sign in" style="sgin_head"/>
           <label className='a_form_label'>Email or mobile phone number</label>
           <div>
-            <input className='emails' name='email' placeholder='inter your email' onChange={handleEmail}/>
-            <Link to = "/">
+            <div className='sgin_input_email_box'>
+              <input className='sgin_emails' name='email' type='email' placeholder='inter your email' onChange={handleEmail}/>
+              { sginerr.email && <p className='sgin_err'>{sginerr.email}</p>}
+            </div>
+            <div className='sgin_input_password_box'>
+              <input className='sgin_password' name='password' type='password' placeholder='inter your password' onChange={handleEmail}/>
+              { sginerr.password && <p className='sgin_err'>{sginerr.password}</p>}
+            </div>
               <button className='continues' onClick={heandleContinues}>continues</button>
-            </Link>
             <Pera text = "By continuing, you agree to bajar's ." style ="form_pera"/>
           </div>
           <Pera text="Buying for work?" style="work"/>
