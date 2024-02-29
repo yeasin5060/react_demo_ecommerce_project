@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom'
 import axios from 'axios';
 import './Header.css'
 import Pera from '../../Component/Pera/Pera';
+import Nanohead from '../../Component/Nanohead/Nanohead';
+import { useSelector, useDispatch } from 'react-redux'
+import { customers } from '../../userslice';
 
 const Header = () => {
     let deli =[
@@ -19,6 +22,9 @@ const Header = () => {
         }
         loca()
     },[])*/
+
+    const data = useSelector((state) => state.userdata.value)
+    console.log(data)
 
   return (
     <section id='header'>
@@ -54,6 +60,12 @@ const Header = () => {
                             <NavLink to='login'>login</NavLink>
                         </li>
                     </ul>
+                </div>
+                <div className='heder_profile_and_customer_name_box'>
+                    <div className='heder_profile_box'>
+                        <img src={data && data.photoURL} alt="" />
+                    </div>
+                    <Nanohead text={data && data.displayName} style="heder_customer_name"/>
                 </div>
             </div>
         </div>

@@ -32,7 +32,7 @@ const Login = () => {
                 .then(() => {
                     updateProfile(auth.currentUser, {
                         displayName: userData.firstName,
-                        photoURL: "https://example.com/jane-q-user/profile.jpg"
+                        photoURL: "https://thumbs.dreamstime.com/b/businessman-icon-vector-male-avatar-profile-image-profile-businessman-icon-vector-male-avatar-profile-image-182095609.jpg"
                       }).then(() => {
                         set(ref(db ,"customerdata/" + userCredential.user.uid),{
                           customerName : userCredential.user.displayName,
