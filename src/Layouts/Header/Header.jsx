@@ -6,8 +6,12 @@ import Pera from '../../Component/Pera/Pera';
 import Nanohead from '../../Component/Nanohead/Nanohead';
 import { useSelector, useDispatch } from 'react-redux'
 import { customers } from '../../userslice';
+import { getDatabase, ref, onValue , set , push ,remove } from "firebase/database";
 
 const Header = () => {
+    const data = useSelector((state) => state.userdata.value)
+    let [customerList , setCustomerList] = useState([])
+    const db = getDatabase();
     let deli =[
         {
             text : "deliver to"
@@ -22,9 +26,22 @@ const Header = () => {
         }
         loca()
     },[])*/
+      // All user data read operation 
+      useEffect(()=>{
+        const userListRef = ref(db, 'customerdata');
+            onValue(userListRef, (snapshot) => {
+               let array = []
+            snapshot.forEach((item)=>{
+                if(data.uid != item.key){
+                    array.push({...item.val(),id:item.key})
+                }
+            })
+            setCustomerList(array)
+        });
+    },[])
 
-    const data = useSelector((state) => state.userdata.value)
     console.log(data)
+    console.log(customerList);
 
   return (
     <section id='header'>
@@ -61,12 +78,20 @@ const Header = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='heder_profile_and_customer_name_box'>
-                    <div className='heder_profile_box'>
-                        <img src={data && data.photoURL} alt="" />
-                    </div>
-                    <Nanohead text={data && data.displayName} style="heder_customer_name"/>
-                </div>
+                    {
+                        customerList && customerList.length > 0
+                        ?
+                            customerList.map((item , index)=>(
+                            <div key={index} className='heder_profile_and_customer_name_box'>
+                                <div className='heder_profile_box'>
+                                    <img src={item.customerPhoto} alt="not found" />
+                                </div>
+                                <Nanohead text={item.customerName} style="heder_customer_name"/>
+                            </div>
+                        ))
+                        :
+                        <h1>hi</h1>
+                    }
             </div>
         </div>
     </section>
