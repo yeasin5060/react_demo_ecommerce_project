@@ -79,18 +79,18 @@ const Header = () => {
                     </ul>
                 </div>
                     {
-                        customerList && customerList.length > 0
-                        ?
-                            customerList.map((item , index)=>(
-                            <div key={index} className='heder_profile_and_customer_name_box'>
-                                <div className='heder_profile_box'>
-                                    <img src={item.customerPhoto} alt="not found" />
-                                </div>
-                                <Nanohead text={item.customerName} style="heder_customer_name"/>
-                            </div>
-                        ))
-                        :
-                        <h1>hi</h1>
+                         customerList && customerList.length > 0
+                         ?
+                             customerList.map((item , index)=>(
+                             <div key={index} className='heder_profile_and_customer_name_box'>
+                                 <div className='heder_profile_box'>
+                                     <img src={item.customerPhoto} alt="not found" />
+                                 </div>
+                                 <Nanohead text={item.customerName} style="heder_customer_name"/>
+                             </div>
+                         ))
+                         :
+                         <h1></h1>
                     }
             </div>
         </div>
