@@ -6,6 +6,7 @@ import Pera from '../../Component/Pera/Pera';
 import Nanohead from '../../Component/Nanohead/Nanohead';
 import { useSelector, useDispatch } from 'react-redux'
 import { customers } from '../../userslice';
+import amazon_logo from '../../images/amazon_logo.png';
 import { getDatabase, ref, onValue , set , push ,remove } from "firebase/database";
 
 const Header = () => {
@@ -49,7 +50,7 @@ const Header = () => {
             <div className='header_wrapper'>
                 <div className='header_logo_location'>
                     <div className='header_logo'>
-                        <img src="images/bajar_logo.jpg" alt="not found" />
+                        <img src={amazon_logo} alt="not found" />
                     </div>
                     <div className='header_location'>
                        <Pera text="deliver to" style="location"/> 

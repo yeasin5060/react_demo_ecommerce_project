@@ -32,13 +32,13 @@ function App() {
           <Route path='/customerservice' element={<Customerservice/>}/>
           <Route path='/giftcard' element={<Giftcard/>}/>
           <Route path='/sell' element={<Sell/>}/>
-          <Route path='/sgin' element={<Sing/>}/>
           <Route path='/order' element={<Order/>}/>
           <Route path='/cart' element={<Cart/>}/>
-          <Route path='/login' element={<Login/>}/>
           <Route path='/bajarmusic' element ={<Allbajarmusic/>}/>
           <Route path='/electronics' element ={<Allelectronic/>}/>
         </Route>
+        <Route path='/sgin' element={<Sing/>}/>
+        <Route path='/login' element={<Login/>}/>
         <Route path='*' element = {<Errorpage/>}/>
       </>
     )

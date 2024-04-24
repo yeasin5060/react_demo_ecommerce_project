@@ -5,6 +5,7 @@ import { getDatabase, ref, set,push } from "firebase/database";
 import { Link } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword , sendEmailVerification ,updateProfile } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import amazon_logo from '../../../images/Amazon-Logo.png';
 
 
 const Login = () => {
@@ -130,7 +131,7 @@ const Login = () => {
     <section id='login'>
         <div className='container'>
             <div className='login_logo'>
-                <img src="images/bajar_logo.jpg" alt="not found" />
+                <img src={amazon_logo} alt="not found" />
             </div>
             <div className='form'>
                 <div className='form_head'>

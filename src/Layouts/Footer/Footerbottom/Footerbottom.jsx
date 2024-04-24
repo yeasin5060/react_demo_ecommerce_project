@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footerbottom.css'
 import Minihead from '../../../Component/Miniheading/Minihead'
+import amazon_logo from '../../../images/amazon_logo.png';
 
 const Footerbottom = () => {
   return (
@@ -8,7 +9,7 @@ const Footerbottom = () => {
         <div className='container'>
             <div className='footerbottom_wrapper'>
                 <div className='footerbottom_logo'>
-                    <img src="images/bajar_logo.jpg" alt="not found" />
+                    <img src={amazon_logo} alt="not found" />
                 </div>
                 <div className='footerbottom_btn'>
                     <Minihead text="english" style="btn_three"/>

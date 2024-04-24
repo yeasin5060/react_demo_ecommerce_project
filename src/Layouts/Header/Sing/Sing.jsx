@@ -7,6 +7,7 @@ import { getAuth, signInWithEmailAndPassword , signOut } from "firebase/auth";
 import { useSelector, useDispatch } from 'react-redux'
 import { customers } from '../../../userslice'
 import { useNavigate } from "react-router-dom";
+import amazon_logo from '../../../images/Amazon-Logo.png';
 
 const Sing = () => {
 
@@ -86,7 +87,7 @@ const Sing = () => {
     <section id='sgin'>
       <div className='container'>
         <div className='sgin_logo'>
-            <img src="images/bajar_logo.jpg" alt="not found" />
+            <img src={amazon_logo} alt="not found" />
         </div>
         <div className='sgin_container'>
           <Subhead text="Sign in" style="sgin_head"/>
@@ -101,10 +102,10 @@ const Sing = () => {
               { sginerr.password && <p className='sgin_err'>{sginerr.password}</p>}
             </div>
               <button className='continues' onClick={heandleContinues}>continues</button>
-            <Pera text = "By continuing, you agree to bajar's ." style ="form_pera"/>
+            <Pera text = "By continuing, you agree to amazon's ." style ="form_pera"/>
           </div>
           <Pera text="Buying for work?" style="work"/>
-          <Link className='shopon' to ="shopon">Shop on bajar Business</Link>
+          <Link className='shopon' to ="shopon">Shop on amazon Business</Link>
         </div>
         <div className='bajarnew'>
           <Pera text="New to bajar?" style="new"/>

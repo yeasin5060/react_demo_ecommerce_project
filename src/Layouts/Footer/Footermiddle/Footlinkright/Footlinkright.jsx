@@ -12,7 +12,7 @@ const Footlinkright = () => {
         <div className='footlinkright_link'>
             <ul className='list'>
                 <li>
-                    <NavLink to="bajarandCOVID-19">bajar and COVID-19</NavLink>
+                    <NavLink to="bajarandCOVID-19">amazon and COVID-19</NavLink>
                 </li>
                 <li>
                     <NavLink to="youraccount">Your Account</NavLink>
@@ -30,7 +30,7 @@ const Footlinkright = () => {
                     <NavLink to="manageyourcontentanddevices">Manage Your Content and Devices</NavLink>
                 </li>
                 <li>
-                    <NavLink to="bajarassistant">bajar Assistant</NavLink>
+                    <NavLink to="bajarassistant">amazon Assistant</NavLink>
                 </li>
                 <li>
                     <NavLink to="help">help</NavLink>

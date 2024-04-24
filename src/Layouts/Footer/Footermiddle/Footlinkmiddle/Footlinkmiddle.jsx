@@ -12,13 +12,13 @@ const Footlinkmiddle = () => {
         <div className='footlinkmiddle_link'>
             <ul className='list'>
                 <li>
-                    <NavLink to="sellproductsonbajar">Sell products on bajar</NavLink>
+                    <NavLink to="sellproductsonbajar">Sell products on amazon</NavLink>
                 </li>
                 <li>
-                    <NavLink to="sellonbajarbusiness">Sell on bajar Business</NavLink>
+                    <NavLink to="sellonbajarbusiness">Sell on amazon Business</NavLink>
                 </li>
                 <li>
-                    <NavLink to="sellappsonbajar">Sell apps on bajar</NavLink>
+                    <NavLink to="sellappsonbajar">Sell apps on amazon</NavLink>
                 </li>    
                 <li>
                     <NavLink to="becomeanaffiliate">Become an Affiliate</NavLink>
@@ -30,7 +30,7 @@ const Footlinkmiddle = () => {
                     <NavLink to="self-publishwithus"> Self-Publish with Us</NavLink>
                 </li>
                 <li>
-                    <NavLink to="hostanbajarhub">Host an bajar Hub</NavLink>
+                    <NavLink to="hostanbajarhub">Host an amazon Hub</NavLink>
                 </li>
                 <li>
                     <NavLink to="seemoremakemoneywithus">See More Make Money with Us</NavLink>

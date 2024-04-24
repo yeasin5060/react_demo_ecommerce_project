@@ -17,16 +17,16 @@ const Footlinkleft = () => {
                     <NavLink to="blog">blog</NavLink>
                 </li>
                 <li>
-                    <NavLink to="aboutbajar">about bajar</NavLink>
+                    <NavLink to="aboutbajar">about amazon</NavLink>
                 </li>    
                 <li>
                     <NavLink to="investorrelatio">investor relations</NavLink>
                 </li>
                 <li>
-                    <NavLink to="bajardevices"> bajar devices</NavLink>
+                    <NavLink to="bajardevices"> amazon devices</NavLink>
                 </li>
                 <li>
-                    <NavLink to="bajarscience"> bajar science</NavLink>
+                    <NavLink to="bajarscience"> amazon science</NavLink>
                 </li>
             </ul>
         </div>

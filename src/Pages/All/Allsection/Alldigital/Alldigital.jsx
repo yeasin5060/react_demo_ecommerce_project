@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 let digitallink = [
     {
         id : 1,
-        name : "Bajar Music",
+        name : "Amazon Music",
         link : "bajarmusic"
     },
     {
@@ -16,7 +16,7 @@ let digitallink = [
     },
     {
         id :3 ,
-        name : "Bajar Appstore",
+        name : "Amazon Appstore",
         link : "bajarappstore"
     },
 ]
